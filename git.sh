@@ -9,4 +9,4 @@ git add .
 git commit -m update
 git push $REPO $BRANCH
 
-echo "仓库： $REPO\t分支: $BRANCH 被更新"
+echo "仓库： $REPO  分支: $BRANCH 被更新"

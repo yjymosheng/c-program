@@ -15,8 +15,8 @@
 ```shell
 .
 ├── main.c						//运行的主体逻辑函数（程序入口）
-├── console	 					//输出程序对外的内容
-├── function 					//实现计算的逻辑
+├── process	 					//输出程序对外的内容
+├── calculate 					//实现计算的逻辑
 ├── struct						//管理的数据结构
 ├── Makefile 					//编译、运行代码
 ├── program-guide.md			//讲解代码

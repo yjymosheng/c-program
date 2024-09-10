@@ -1,12 +1,23 @@
 #include <stdio.h>
-#include "console/console.h"
-#include "function/function.h"
-#include "struct/struct.h"
+#include "config.h"
+#include "calculate/calculate.h"
+#include "process/process.h"
+#include "struct/contain/contain.h"
+#include "struct/stack/stack.h"
 
+
+
+
+/*
+ * PC指针是指向输入数据位置的指针
+ * 通过PC指针的移动。
+ * 判断每一个PC指针指向的数据属于运算符（+、-、*、/、%）还是操作数
+ */
 int main(){
-   greeting();
-   while (get_input()) {
-   
+   Container* input = init_container(); //用一个结构体来存放输入的表达是
+   greeting();    // 程序运行时的输出
+   while (get_input_container(input)) {
+     
    }
    
    return 0;

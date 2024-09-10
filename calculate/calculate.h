@@ -1,5 +1,5 @@
-#ifndef FUNCTION_H
-#define FUNCTION_H
+#ifndef CALCULATE_H
+#define CALCULATE_H
 
 /*
  *这里先用经典类型计算，以后在考虑更大的数字（超出范围的数字）

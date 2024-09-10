@@ -21,4 +21,14 @@
 
 项目主要内容： xx系统（想不出来）
 
+### 使用教程
 
+将远程仓库 clone 到本地
+
+```shell
+git clone xxxxxxxxxxxxxxxx
+```
+
+![](img/clone_step1.jpg)
+
+![](img/clone_step2.jpg)

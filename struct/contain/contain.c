@@ -33,5 +33,5 @@ static void contain_next(Container * self){
     return ;
 }
 void release_container(Container* self){
-    free((Container*)self);
+    free(self);
 }

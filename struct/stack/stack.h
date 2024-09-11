@@ -13,8 +13,5 @@ typedef struct stack {
 
 Stack* init_stack();
 
-static void stack_push(Stack* self,Container* input );
-static void stack_pop(Stack* self);
-
 void release_stack(Stack* self);
 #endif

@@ -23,12 +23,13 @@ int main() {
   //   }
   // }
   
-  switch (input->get_input(input)) {
-  case Ok:printf("%s\n",input->input);
-  break;
-  case Err:printf("has error");
-  }
+  // switch (input->get_input(input)) {
+  // case Ok:printf("%s\n",input->input);
+  // break;
+  // case Err:printf("has error");
+  // }
 
+printf("run \n %d \n",input->is_empty(input));
 
   release_container(input);
   return 0;

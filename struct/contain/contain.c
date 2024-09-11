@@ -9,9 +9,7 @@ static void contain_next(Container * self);
 Container* init_container (){
     Container* s = (Container*) malloc(sizeof(Container));
     s->pc=0;
-    for (int i=0; i<MAXLINE; ++i) {
-        s->input[i] = '\0';
-    }
+    s->input = (char*)malloc(sizeof(char)*MAXLINE);
     s->is_empty = &isempty;
     s->get_input = &get_input_container;
     s->next = &contain_next;
@@ -19,9 +17,7 @@ Container* init_container (){
 }
 
 static enum function_state get_input_container(Container* self){
-    char s[MAXLINE];
-    scanf("%s",s);
-    sprintf(self->input, s);
+    scanf("%s",self->input);
     self->pc=0;
     return Ok;
 }
@@ -33,5 +29,10 @@ static void contain_next(Container * self){
     return ;
 }
 void release_container(Container* self){
+    free(self->input);
     free(self);
+}
+
+void printf_contain(Container* self){
+    printf("contain: %s\n",self->input+self->pc);
 }

@@ -1,6 +1,8 @@
 #include "../config.h"
 #include <stdbool.h>
 #include "../struct/contain/contain.h"
+#include "../struct/stack/stack.h"
+
 
 #ifndef PROCESS_H
 #define PROCESS_H
@@ -16,9 +18,10 @@ void greeting();
 
 
 //todo! 这一串逻辑待定
-enum function_state parce_input(char* input );            //处理获取的输入。需要用东西来存储处理后的数据
+// enum function_state parce_input(char* input );            //处理获取的输入。需要用东西来存储处理后的数据
 
-enum whichcase analyze(Container* input);
+int analyze(Container* input);
 
+void calculate(Stack* stack , Container* input);
 
 #endif

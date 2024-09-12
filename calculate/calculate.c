@@ -1,4 +1,5 @@
 #include "calculate.h"
+#include <stdio.h>
 
 /*
  *示例 
@@ -14,6 +15,8 @@ int sub(char* a , char* b){
 
 
 int multiply(char* a , char* b){
+
+    printf("\tfrom mut function,a: %d\t b: %d\n",*a,*b);
     return (*a)*(*b);
 }
 

@@ -22,7 +22,7 @@ static void stack_push(Stack* self,char e ){
         fprintf(stderr, "the stack is top_overflow");
         return ;
     }
-        fprintf(stdout, "stack push : %c\n",e);
+        fprintf(stdout, "stack push : %d\n",e);
 
     self->sp+=1;
     self->buf[self->sp] = e;
@@ -35,7 +35,7 @@ static char stack_pop(Stack* self){
     }
 
     char a = self->buf[self->sp];
-        fprintf(stdout, "stack pop : %c\n",a);
+        fprintf(stdout, "stack pop : %d\n",a);
         self->sp-=1;
     return a;
 }

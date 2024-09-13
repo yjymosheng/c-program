@@ -116,7 +116,6 @@ git add .
 ```
 
 ### git提交文件到暂存区
-
 ![](/home/mosheng/github/class-test-ci/img/git_分区.png)
 ```shell
 git commit -m "xxxx"  xxxx 指代 用来批注的信息 比如 “update ” 、 “first init”

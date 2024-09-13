@@ -176,3 +176,11 @@ git push $REPO_NAME $BRANCH_NAME
 #切换到ch1 代码目录
 git checkout ch1
 ```
+
+### git 获取内容
+
+用来获取别人更新的内容，用来进行同步
+
+```shell
+git pull
+```

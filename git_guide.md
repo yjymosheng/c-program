@@ -74,6 +74,33 @@ brew install git-gui
 
 ![](https://www.runoob.com/wp-content/uploads/2015/02/18333fig0107-tn.png)
 
+# git安装后的常识介绍
+
+**注 以windows为背景介绍，Linux 没必要教，Mac我没用过、不会用**
+
+下载安装后，回到桌面，鼠标右键，会有两栏 “git bash” "git gui"
+
+### git bash
+提供一个命令行空间，本质上和win的cmd、powershell没什么区别。
+
+### git gui 
+提供一个图形化界面，全英文，实际操作复杂、麻烦，基本也没人使用
+
+### powershell/cmd 方案
+win+r  唤出windows的启动工具，里面输入powershell 或 cmd ，会出现一个黑框框
+
+显示PS C:\Users\<你的用户名>  这是windows终端的默认启动目录。
+
+![](img/cmd1.png)
+
+可以通过cd命令切换到其它目录再执行下列命令，这里直接执行（自己用文件夹找到这个目录，鼠标拖出来）
+
+![](img/cmd2.png)
+
+这个下载过程可能有点慢,因为我往里面塞了个50M左右的压缩包，可能以后会更改这个压缩包的存放位置
+
+
+
 
 
 # git使用

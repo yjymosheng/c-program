@@ -52,7 +52,8 @@ VScode 安装汉化包很简单，打开 VScode，点击安装扩展，在搜索
 
 MinGW-w64 是一个开源项目，它为 Windows 系统提供了一个完整的 GCC 工具链，支持编译生成 32 位和 64 位的 Windows 应用程序。GCC工具链就是GNU Compiler Collection
 
-直接解压 x86_64-7.3.0-release-posix-sjlj-rt_v5-rev0.7z文件
+直接解压 当前目录下的x86_64-7.3.0-release-posix-sjlj-rt_v5-rev0.7z文件 ，不要自己去网上找，这个版本够用，以后明白怎么操作了随便怎么折腾
+
 ![](img/jieya.jpg)
 
 解压完成后，在 bin 目录里面就可以找到 g++.exe 或者 gcc.exe（我们真正需要的程序）：

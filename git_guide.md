@@ -1,4 +1,4 @@
-# C-ENV-guide for CAFUC
+# C-git-guide for CAFUC
 
 **注：本仓库仅用于学习**
 

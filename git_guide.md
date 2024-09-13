@@ -95,7 +95,11 @@ git config --global user.email xxxx@xxxx.com
 仓库连接的获取方式请根据本仓库同级目录下的REAME.md文件中查看（自我提炼这个过程）
 
 ```shell
-git clone 仓库连接=
+# 基本格式
+# git clone 仓库连接
+
+# 下载本仓库
+git clone https://gitee.com/yinjinyu2023/c-program.git
 ```
 
 ### git添加文件
@@ -133,4 +137,17 @@ git push origin master     更新origin仓库（代指，可以自己命名的�
 git add .
 git commit -m update
 git push $REPO_NAME $BRANCH_NAME
+```
+
+
+### git分支切换
+
+以此仓库为例，通过git clone 下载后默认是master 分支
+![](img/branch-a.png)
+```shell
+#切换分支
+#git checkout 分支名称
+
+#切换到ch1 代码目录
+git checkout ch1
 ```

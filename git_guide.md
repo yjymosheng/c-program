@@ -143,6 +143,7 @@ git push $REPO_NAME $BRANCH_NAME
 ### git分支切换
 
 以此仓库为例，通过git clone 下载后默认是master 分支
+
 ![](img/branch-a.png)
 ```shell
 #切换分支

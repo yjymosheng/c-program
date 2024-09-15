@@ -19,9 +19,7 @@ typedef struct Container {
 
 Container* init_container ();
 
-// static enum function_state get_input_container(Container* self);
-// static bool isempty (Container* self); //当input[pc]=='\0' 就表明已经遍历完了，是空的
-// static void contain_next(Container * self);
+
 void release_container(Container* self);
 
 void printf_contain(Container* self);

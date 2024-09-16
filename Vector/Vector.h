@@ -25,6 +25,12 @@ int pop(Vector*vec , Element *  e);     //末尾弹出一个元素，并赋值�
 // enum Result pop(Vector*vec , Element *  e);     //末尾弹出一个元素，并赋值给e；
 // Element pop(Vector*vec);    //都有不同的写法，可以根据实际需求进行自己的定义
 
+void insertVector(Vector* vec ,Element e ,int index);
+int getVector(Vector* vec ,int  index );
+int locateVector(Vector* vec ,Element e );
+int updateVector(Vector* vec , Element e ,int index);
+int removeVector(Vector* vec ,int index);
+
 
 void showVector(Vector* vec);
 

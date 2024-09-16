@@ -29,6 +29,8 @@ int pop(LinkList*list , Element *  e);     //末尾弹出一个元素，并赋�
 // enum Result pop(LinkList*list , Element *  e);     //末尾弹出一个元素，并赋值给e；
 // Element pop(LinkList*list);    //都有不同的写法，可以根据实际需求进行自己的定义
 
+int removeList(LinkList* list, Element e );
+int insertList(LinkList* list, Element e ,int index);
 
 void showList(LinkList* list);
 

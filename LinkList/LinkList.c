@@ -1,4 +1,5 @@
 #include "LinkList.h"
+#include <stdio.h>
 
 LinkList *createList() {
   LinkList *list = (LinkList *)malloc(sizeof(LinkList));
@@ -57,6 +58,71 @@ int pop(LinkList *list, Element *e) {
   return 0;
 }
 
+int removeList(LinkList *list, Element e) {
+  Node *temp;
+  temp = list->head;
+  if (list->head->val==e) {
+
+    list->head = list->head->next;
+    free(temp);
+  list->len--;
+  if (list->len==0) {
+  list->rear=NULL;
+  }
+
+  }else { 
+  while (temp->next!=NULL && temp->next->val != e) {
+    temp = temp->next;
+  }
+  if (temp->next==NULL) {
+    // printf("not find!\n");
+    return -1;
+  }
+  if (temp->next==list->rear) {
+    list->rear =temp;
+  }
+  Node *tmp = temp->next->next;
+  free(temp->next);
+  temp->next = tmp;
+  list->len--;
+  }
+  return 0;
+}
+int insertList(LinkList* list, Element e ,int index){
+  if (index<=0 || index>list->len+1) {
+    printf("not\n");
+    return -1;
+  }
+  if (index==1) {
+    Node* temp = (Node*)malloc(sizeof(Node));
+    temp->val=e ; temp->next = list->head;
+    list->head =temp;
+  if (list->len==0) {
+    list->rear=temp;
+  }
+  list->len++;
+    return 0;
+  }else if (index == list->len+1) {
+    Node* temp = (Node*)malloc(sizeof(Node));
+     temp->val=e ; temp->next=NULL;
+     list->rear->next = temp;
+  list->len++;
+     list->rear = temp;
+     return 0;
+  }else {
+    Node* temp = list->head;
+    int i=1;
+    while (i!=index-1) {
+      temp=temp->next;i++;
+    }
+    Node* tmp = (Node*)malloc(sizeof(Node));
+    tmp->val=e;tmp->next = temp->next;
+    temp->next = tmp;
+  list->len++;
+return 0;
+  }
+
+}
 void showList(LinkList *list) {
   Node *temp = list->head;
   while (temp != NULL) {

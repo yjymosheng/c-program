@@ -36,22 +36,21 @@ int popStack(Stack *stack, Element *e) {
     stack->count--;
     return 0;
   }
-  case 2 :{
+  case 2: {
     *e = stack->buf->next->val;
     free(stack->buf->next);
     stack->buf->next = NULL;
     stack->count--;
-    return  0;
-
+    return 0;
   }
   default: {
-    Node* temp =stack->buf;
-    while (temp->next->next != NULL ) {
+    Node *temp = stack->buf;
+    while (temp->next->next != NULL) {
       temp = temp->next;
     }
     *e = temp->next->val;
     free(temp->next);
-    temp->next =NULL;
+    temp->next = NULL;
     stack->count--;
     return 0;
   }
@@ -63,17 +62,16 @@ Element top(Stack *stack) {
     printf("空了\n");
     return -1;
   }
-  int cnt =0;
-  Node* temp = stack->buf;
-  while ( temp->next!=NULL) {
-      temp = temp->next;
-
+  int cnt = 0;
+  Node *temp = stack->buf;
+  while (temp->next != NULL) {
+    temp = temp->next;
   }
   return temp->val;
 }
 
 void releaseStack(Stack *stack) {
-  Node* temp = stack->buf;
+  Node *temp = stack->buf;
 
   if (stack != NULL) {
     while (stack->buf) {

@@ -1,3 +1,7 @@
 *.o
 Vector/Vector
 LinkList/LinkList
+Stack/Stack_static/Stack_static
+Stack/Stack_dynamic/Stack_dynamic
+Queue/Queue_static/Queue_static
+Queue/Queue_dynamic/Queue_dynamic

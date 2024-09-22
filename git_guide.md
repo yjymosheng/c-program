@@ -31,7 +31,7 @@ sudo pacman -S git
 
 在 Windows 平台上安装 Git 同样轻松，有个叫做 msysGit 的项目提供了安装包，可以到 GitHub 的页面上下载 exe 安装文件并运行：
 ###### 安装包下载地址：https://gitforwindows.org/
-直接官网下载也可以：https://git-scm.com/download/win。
+直接官网下载也可以：https://git-scm.com/download/win
 
 ![](https://www.runoob.com/wp-content/uploads/2015/02/git-win.png)
 
